@@ -13,8 +13,9 @@ function getGreeting(lang) {
 const Greetings = (props) => {
   return (
     <div>
-      <h2>{getGreeting(props.lang)}</h2>
-      <p>{props.children}</p>
+      <h2>
+        {getGreeting(props.lang)} {props.children}
+      </h2>
     </div>
   );
 };

@@ -6,10 +6,8 @@ const IdCard = (props) => {
         <div className="infoTitle">
           <h4>
             <strong>First name: </strong>
+            {props.firstName}
           </h4>
-        </div>
-        <div className="infoContent">
-          <p>{props.firstName}</p>
         </div>
         <h4>
           <strong>Last name: </strong>

@@ -8,6 +8,17 @@
   display: block;
 }
 
+#idCard {
+  display: flex;
+  align-items: left;
+}
+
+#greetings {
+  display: flex;
+  align-items: right;
+  justify-items: right;
+}
+
 .info {
   display: flex;
   flex-direction: column;
