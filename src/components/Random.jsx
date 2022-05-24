@@ -6,7 +6,7 @@ function getRandomInt(min, max) {
 
 const Random = (props) => {
   return (
-    <div>
+    <div className="divBorder">
       <h2>
         Random value between {props.min} and {props.max} =>{' '}
         {getRandomInt(props.min, props.max)}

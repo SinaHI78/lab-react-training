@@ -12,7 +12,7 @@ function getGreeting(lang) {
 
 const Greetings = (props) => {
   return (
-    <div>
+    <div className="divBorder">
       <h2>
         {getGreeting(props.lang)} {props.children}
       </h2>

@@ -1,30 +1,30 @@
 const IdCard = (props) => {
   return (
-    <div>
+    <div className="divBorder">
       <img src={props.picture} alt="profile" />
-      <div className="info">
-        <div className="infoTitle">
-          <h4>
+      <div id="cardContent">
+        <ul>
+          <li>
             <strong>First name: </strong>
             {props.firstName}
-          </h4>
-        </div>
-        <h4>
-          <strong>Last name: </strong>
-          {props.lastName}
-        </h4>
-        <h4>
-          <strong>Gender: </strong>
-          {props.gender}
-        </h4>
-        <h4>
-          <strong>Height: </strong>
-          {props.height}
-        </h4>
-        <h4>
-          <strong>Birth: </strong>
-          {props.birth.toLocaleDateString()}
-        </h4>
+          </li>
+          <li>
+            <strong>Last name: </strong>
+            {props.lastName}
+          </li>
+          <li>
+            <strong>Gender: </strong>
+            {props.gender}
+          </li>
+          <li>
+            <strong>Height: </strong>
+            {props.height}
+          </li>
+          <li>
+            <strong>Birth: </strong>
+            {props.birth.toDateString()}
+          </li>
+        </ul>
       </div>
     </div>
   );
