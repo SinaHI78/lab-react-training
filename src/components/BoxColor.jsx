@@ -14,6 +14,7 @@ function getStyle(r, g, b) {
 const BoxColor = (props) => {
   const hex = rgbToHex(props.r, props.g, props.b);
   const style = getStyle(props.r, props.g, props.b);
+  // const backgroundIsLight = props.r + props.g + props.b > (255 * 3) / 2;
 
   return (
     <div style={style} className="divBorder">
